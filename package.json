@@ -1,0 +1,35 @@
+{
+  "name": "clientside",
+  "version": "1.0.0",
+  "description": "### [Featured on Freebiesbug](http://freebiesbug.com/psd-freebies/global-futuristic-one-page-portfolio-psd-html/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "autoprefixer": "^9.7.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-jquery": "^1.1.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.2.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mond0040/digital-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mond0040/digital-portfolio/issues"
+  },
+  "homepage": "https://github.com/mond0040/digital-portfolio#readme"
+}
