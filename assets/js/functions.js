@@ -63,6 +63,29 @@ $( document ).ready(function() {
 
   });
 
+
+  var curActive = $('.side-nav').find('.is-active'),
+      curPos = $('.side-nav').children().index(curActive)
+
+    if (window.location.href.indexOf("#3") > 0) {
+        ux = $('.side-nav').children().length - 4,
+        nextPos = ux;
+    updateNavs(ux);
+    updateContent(curPos, nextPos, ux);
+    } else if (window.location.href.indexOf("#4") > 0) {
+        dev = $('.side-nav').children().length - 3,
+        nextPos = dev;
+    updateNavs(dev);
+    updateContent(curPos, nextPos, dev);
+    } else if(window.location.href.indexOf("#5") > 0) {
+      digital = $('.side-nav').children().length - 2,
+      nextPos = digital;
+  updateNavs(digital);
+  updateContent(curPos, nextPos, digital);
+  }
+
+
+
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
       mc = new Hammer(targetElement);
