@@ -150,7 +150,6 @@ $( document ).ready(function() {
 
   // update main content area
   function updateContent(curPos, nextPos, lastItem) {
-
     $('.main-content').children().removeClass('section--is-active');
     $('.main-content').children().eq(nextPos).addClass('section--is-active');
     $('.main-content .section').children().removeClass('section--next section--prev');

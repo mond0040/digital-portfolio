@@ -1,5 +1,5 @@
 .section-inside.ux{
-  background-color: $muted-gray;
+  background-color: #eee;
   .ux-ui-design{
     top: 60px;
     .work-container .each-work img{
@@ -14,14 +14,23 @@
 
 }
 
+.description {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .side-bar-sec {
+  display: flex;
+  position: relative;
+  top: 60px;
   width: 400px;
-  position: absolute;
   background-color: white;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  right: 100px;
-  bottom: -150px;
 }
 
 .work-header {

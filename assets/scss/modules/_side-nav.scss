@@ -26,6 +26,7 @@
       color: $white;
       font-size: 6px;
       cursor: pointer;
+      max-width: 120px;
   
       span {
         position: relative;
@@ -63,10 +64,13 @@
   
       &:nth-child(4)::before {
         content: "04";
-      }
+      }  
   
       &:nth-child(5)::before {
         content: "05";
+      }
+      &:nth-child(6)::before {
+        content: "06";
       }
   
       &.is-active {

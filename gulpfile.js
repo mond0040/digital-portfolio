@@ -32,13 +32,13 @@ gulp.task('fonts', function() {
 gulp.task('scripts', function () {
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
-    'js/*.js'
+    'assets/js/*.js'
   ]) 
-    .pipe(concat('main.js')) 
-    .pipe(gulp.dest('js/dev')) 
-    .pipe(rename('main.min.js')) 
+    .pipe(concat('functions.js')) 
+    .pipe(gulp.dest('assets/js')) 
+    .pipe(rename('functions-min.js')) 
     .pipe(uglify()) 
-    .pipe(gulp.dest('js/min')) 
+    .pipe(gulp.dest('assets/js/min')) 
     .pipe(browserSync.stream()) 
 })
 
@@ -46,7 +46,7 @@ gulp.task('scripts', function () {
 gulp.task('default', function(){
   browserSync.init({ server: './' })
   gulp.watch('assets/scss/**/*.scss', gulp.series('sass'))
-  gulp.watch('js/*.js', gulp.series('scripts'))
+  gulp.watch('assets/js/*.js', gulp.series('scripts'))
   gulp.watch('*.html').on('change', browserSync.reload)
 })
 
