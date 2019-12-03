@@ -1,3 +1,8 @@
+img.logo-main {
+  width: 100%;
+  max-width: 200px;
+}
+  
   .about {
     position: relative;
     display: flex;
@@ -49,14 +54,24 @@
       height: 10px;
       background-color: $highlight;
     }
+    p{
+      max-width: 800px;
+      width: 100%;
+      background-color: rgba(184, 218, 233, 0.5);
+      padding: 10px;
+    }
   
     h2 {
       position: relative;
       margin-top: 35px;
+      font-family: $header-font;
       font-size: 68px;
       font-weight: 900;
       line-height: 1;
       z-index: 1;
+      max-width: 1000px;
+      width: 100%;
+
   
       &::before {
         content: "";
@@ -104,8 +119,16 @@
   
     img {
       position: absolute;
-      bottom: -90px;
-      right: -12px;
+      bottom: 20px;
+      right: -5%;
+      width: 100%;
+      max-width: 450px;
+      z-index: -10;
+      transform: rotateY(540deg);
+
+      &.logo{
+        transform: rotateY(0deg);
+      }
     }
   }
   
