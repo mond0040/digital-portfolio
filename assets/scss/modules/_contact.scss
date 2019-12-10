@@ -15,10 +15,24 @@
     justify-content: center;
     margin: 0 auto;
 
+    h2{
+      font-family: $header-font;
+      font-size: 56px;
+
+      @media(max-width: 767px){
+        opacity: 0;
+        display: none;
+      }
+    }
+
 .work-container {
   display: flex;
   // flex-wrap: wrap;
   align-items: center;
+
+  @media(max-width: 767px){
+    flex-direction: column;
+  }
 
   .each-work {
     display: flex;

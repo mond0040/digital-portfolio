@@ -73,6 +73,31 @@ $( document ).ready(function() {
 
   });
 
+    $('.view-digital').click(function(){
+
+    var curActive = $('.side-nav').find('.is-active'),
+        curPos = $('.side-nav').children().index(curActive),
+        lastItem = $('.side-nav').children().length - 2,
+        nextPos = lastItem;
+
+    updateNavs(lastItem);
+    updateContent(curPos, nextPos, lastItem);
+
+  });
+
+
+  $('.view-web').click(function(){
+
+    var curActive = $('.side-nav').find('.is-active'),
+        curPos = $('.side-nav').children().index(curActive),
+        lastItem = $('.side-nav').children().length - 3,
+        nextPos = lastItem;
+
+    updateNavs(lastItem);
+    updateContent(curPos, nextPos, lastItem);
+
+  });
+
 
   var curActive = $('.side-nav').find('.is-active'),
       curPos = $('.side-nav').children().index(curActive)
@@ -94,6 +119,33 @@ $( document ).ready(function() {
   updateContent(curPos, nextPos, digital);
   }
 
+
+  // intro hover image
+  var originalOption = $(".intro--options a")
+  $(".intro--options a").hover(function(){
+    originalOption.addClass("notActive")
+    $(this).addClass('active')
+    $(this).removeClass('notActive')
+    $(".intro--options a.notActive").removeClass("active")
+
+    if($(this).index() == 0){
+      console.log("a")
+      $('.preview-img').removeClass('active')
+      $('.preview-img').eq(0).addClass('active')
+
+    }else if($(this).index() == 1){
+      console.log("a")
+      $('.preview-img').removeClass('active')
+      $('.preview-img').eq(1).addClass('active')
+
+    }else if($(this).index() == 2){
+      console.log("a")
+      $('.preview-img').removeClass('active')
+      $('.preview-img').eq(2).addClass('active')
+
+    }
+     
+  });
 
 
   // swipe support for touch devices

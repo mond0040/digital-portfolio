@@ -63,7 +63,8 @@
       padding: 5px 17px 5px 12px;
       font-weight: 700;
       text-transform: uppercase;
-      background-color: transparent;
+      background-color: $highlight;
+      color: white;
       border: none;
   
       .btn-background {
@@ -90,7 +91,7 @@
         position: relative;
         left: 5px;
         width: 15px;
-        fill: $white;
+        fill: $black;
       }
     }
   
@@ -124,7 +125,13 @@
       &:hover {
         color: $highlight;
       }
+
+      &.active{
+        color: $highlight;
+      }
     }
+
+
   
     h3 {
       font-size: 16px;

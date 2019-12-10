@@ -1,3 +1,19 @@
+.preview-img{
+  display: none;
+
+  &.active{
+    display: block;
+  }
+
+  img {
+    object-fit: cover;
+    width: 930px;
+    height: 150px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+}
+
 .section-inside.ux{
   background-color: #eee;
   .ux-ui-design{
@@ -14,6 +30,11 @@
 
 }
 
+.each-work img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
 .description {
   position: relative;
   width: 100%;
@@ -25,10 +46,7 @@
 }
 
 .side-bar-sec {
-  display: flex;
-  position: relative;
-  top: 60px;
-  width: 400px;
+  width: 100%;
   background-color: white;
   border-radius: 3px;
 }
@@ -40,6 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: $white;
 
   h1{
     display: flex;
