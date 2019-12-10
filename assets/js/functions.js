@@ -129,17 +129,14 @@ $( document ).ready(function() {
     $(".intro--options a.notActive").removeClass("active")
 
     if($(this).index() == 0){
-      console.log("a")
       $('.preview-img').removeClass('active')
       $('.preview-img').eq(0).addClass('active')
 
     }else if($(this).index() == 1){
-      console.log("a")
       $('.preview-img').removeClass('active')
       $('.preview-img').eq(1).addClass('active')
 
     }else if($(this).index() == 2){
-      console.log("a")
       $('.preview-img').removeClass('active')
       $('.preview-img').eq(2).addClass('active')
 
